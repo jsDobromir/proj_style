@@ -1,0 +1,26 @@
+extends layout.pug
+
+block extraHeader
+    link(rel="stylesheet" href="/css/customers.css")
+
+block content
+    main
+        div(class="testimonial" id="customer-1")
+            .testimonial__image_container
+                img(src="/images/customer-1.jpg" alt="Customer1" class="testimonial__image")
+            
+            .testimonial__info
+                h1(class="testimonial__name") Mike Stataham
+                h2(class="testimonial__subtitle")
+                    | Founder of 
+                    a(href="tech-analysis.com") tech-analysis.com
+                p(class="testimonial__text") uHost helped me realize my project with a highly constrained budget in like no time.
+            
+        div(class="testimonial" id="customer-2")
+            .testimonial__info
+                h1(class="testimonial__name") John Mellow
+                h2(class="testimonial__subtitle") Hosts his private videos on uHost.
+                p(class="testimonial__text") I worked as a blogger and always looked for an integrated hosting and file storage solution. I found it in uHost!
+
+            .testimonial__image_container
+                img(src="/images/customer-2.jpg" alt="Customer2" class="testimonial__image")

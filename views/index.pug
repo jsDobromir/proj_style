@@ -1,0 +1,65 @@
+extends layout.pug
+
+block extraHeader
+    link(rel="stylesheet" href="/css/indexPage.css")
+
+block content
+    main
+        section#product-overview
+            h1 Get the freedom you deserve
+        section#plans
+            h1(class="section-title") Choose your plan
+            div
+                article(class="plan")
+                    h1(class="plan__title") Free
+                    h2(class="plan__price") $0/month
+                    h3 For hobby projects or small teams.
+
+                    ul(class="plan__features")
+                        li(class="plan__feature") 1 Workspace
+                        li(class="plan__feature") Unlimited Traffic
+                        li(class="plan__feature") 10GB Storage
+                        li(class="plan__feature") Basic Support
+
+                    div
+                        button(class="button") Choose plan
+                
+                article(class="plan plan--highlighted")
+                    h1(class="plan__annotation") Recommended
+                    h1(class="plan__title") Plus
+                    h2(class="plan__price") $29/month
+                    h3 For ambitious projects
+                    ul(class="plan__features")
+                        li(class="plan__feature") 5 Workspaces
+                        li(class="plan__feature") Unlimited Traffic
+                        li(class="plan__feature") 100GB Storage
+                        li(class="plan__feature") Plus support
+                    div
+                        button(class="button") Choose plan
+
+                article(class="plan")
+                    h1(class="plan__title") Premium
+                    h1(class="plan__price") $99/month
+                    h3 Your enterprise solution.
+                    ul(class="plan__features")
+                        li(class="plan__feature") 10 Workspaces
+                        li(class="plan__feature") Unlimited Traffic
+                        li(class="plan__feature") Unlimited Storage
+                        li(class="plan__feature") Priority support
+                    div
+                        button(class="button") Choose plan
+        section(id="adv")
+            h1(class="adv_annotation") Many Good reasons to Stick Around
+            ul(class="adv__items")
+                li(class="adv__item")
+                    div(class="adv__image")
+                        
+                    p(class="adv__desc") 3,857,000 trusting customers
+                li(class="adv__item")
+                    div(class="adv__image")
+
+                    p(class="adv__desc") 99.999% Uptime Guarantee
+                li(class="adv__item")
+                    div(class="adv__image")
+
+                    p(class="adv__desc") Lighting Fast CDN
